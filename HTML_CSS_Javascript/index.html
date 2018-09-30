@@ -9,13 +9,22 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
     <p>
-        Salto de Línea _ Instruccion : br
+        <a name="Principio"></a> Salto de Línea _ Instruccion : br
     </p>
+    <ul>
+        <a href="#Inicio">
+            <li>Manejo de vínculos internos</li>
+        </a>
+        <a href="#Sub1">
+            <li>Subtitulos</li>
+        </a>
+    </ul>
     <p>
         Títulos: <br>
-        <strong >Principales: h1 </strong>
+        <strong>Principales: h1 </strong>
         <h1>Título Principal</h1>
         <strong>Sub_Título: h2, h3, h4, h5, h6</strong>
         <h2>Sub 1</h2>
@@ -25,7 +34,7 @@
         <h6>Sub 5</h6>
     </p>
     <p>
-        <strong>Enfasis: em y strong</strong><br> 
+        <strong>Enfasis: em y strong</strong><br>
         Etiquetas de Enfasis <br>
         Strong: <strong>Un texto que no tiene sentido con strong</strong> <br>
         Em: <em>Otro texto sin sentido solo que con em</em><br>
@@ -36,6 +45,88 @@
         <a href="#">Clickeame, no envío a ningún lado.</a>
         <br>
         <a href="pag2.html">Pequeño Pensamiento</a>
+        <br>
+        En este link he puesto una dirección WEB, una URL
+        https://www.duckduckgo.com
+        <a href="https://www.duckduckgo.com">Buscador DuckDuckGo</a>
+    </p>
+    <p>
+        Ahora agregaremos imágenes a nuestra página.
+        Etiqueta img
+        <br>
+        <img src="img_pr1/Samurai_Panda.jpg" alt="Samurai Panda" srcset="" width="400">
+        <br>
+        Ahora la imagen tiene un vínculo!!
+        <br>
+        <a href="http://www.duckduckgo.com"><img src="img_pr1/Samurai_Panda.jpg" alt="" title="Búscador DucDuckGo"
+                width="200"></a>
+    </p>
+    <p>
+        Al momento de abrir un link tenemos el problema de que nos abre el link en la misma pestaña, cosa que nos
+        vuelve incomoda el manejo de la pestaña anterior y no poder visualizar lo actual.
+        <br>
+        Esto se arregla gracias al atributo target dentro de la etiqueta a
+        <br>
+        <strong>Ejemplo</strong>
+        <br>
+        Dentro de a 'a href="Página.html" <strong>target="_blank"</strong>' Veamos cómo funciona.
+        <br>
+        <a href="http://www.duckduckgo.com" target="_blank">Búscador DuckDuckGo</a>
+    </p>
+    <p>
+        Ahora se utilizará otro atributo de la etiqueta a para escribir directamente correos electrónicos. <br>
+        atributo <strong>mailto</strong> se maneja de la siguiente manera. <br>
+        Dentro de <strong>a</strong> se escribe lo siguiente == ' a href="mailto:"correo_electrónico(Destino)" '
+        <br>
+        <a href="mailto:ricardope1664@gmail.com">Correo: Ricardo Perez</a>
+        <br>
+        Esta etiqueta ya no se utiliza demasiado debido a el mal uso que le han dado los "spammers" que facilitan el
+        envio del spam...
+    </p>
+    <p>
+        Básicamente ahora, veremos como movernos con vínculos internos. Las etiquetas a necesitar serán <br>
+        <strong>name y href (para ir a name)</strong> <br>
+        se usará la etiqueta a pero ahora tendrá el atributo name == ' a name="nombre_identificador" ' <br>
+        Y nos moveremos hacia el con la etiqueta a y su atributo href == ' a href ="#nombre_identificador" '
+        <br>
+        <a name="Inicio">
+            <h1>Manejo de vínculos internos</h1>
+        </a>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum vitae culpa nulla. Consequuntur amet molestias
+        natus! Officia iusto aliquam qui, dignissimos inventore dolores impedit? Eius mollitia iste quibusdam vero
+        doloribus.
+        <br>
+        <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis delectus debitis nisi illo. Nemo asperiores
+        quas quibusdam commodi placeat, quisquam accusantium nobis earum voluptatem reiciendis vel amet ipsum itaque
+        obcaecati.
+        <a name="Sub1">
+            <h2>Subtitulos</h2>
+        </a>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla similique quae at. Eos, ducimus?
+        Perferendis deserunt obcaecati perspiciatis. Fuga recusandae dicta, porro quae repellendus quis. Dolores minus
+        doloremque id!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia laudantium nesciunt architecto accusamus
+        veritatis repellat eum eaque aperiam iure quasi dignissimos fugiat harum rerum dolores, sint at quae corporis
+        assumenda.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab alias nobis voluptatem corporis vitae facilis
+        ratione ipsa nulla velit dolores quidem expedita voluptate blanditiis, inventore fuga voluptates suscipit
+        molestias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora accusamus beatae deserunt ex? Ipsa
+        molestias impedit mollitia maxime consequatur possimus quam necessitatibus explicabo perspiciatis, quis earum
+        tempore unde eum.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ut quod incidunt asperiores hic sequi numquam
+        unde, voluptas veritatis deserunt repudiandae quo aspernatur voluptate perspiciatis ipsum veniam reprehenderit,
+        eligendi vel?
+    </p>
+    <p>
+        Ahora usaremos el atributo href para dirigirnos
+        <ul>
+            <a href="#Principio">
+                <li>Principio de Página</li>
+            </a>
+
+        </ul>
     </p>
 </body>
 </html>
